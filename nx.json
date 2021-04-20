@@ -12,7 +12,8 @@
       "tags": []
     },
     "demoapp-e2e": {
-      "tags": []
+      "tags": [],
+      "implicitDependencies": ["demoapp"]
     },
     "ngx-lazy-el": {
       "tags": []
