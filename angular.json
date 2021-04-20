@@ -140,7 +140,8 @@
           "builder": "@nrwl/angular:package",
           "options": {
             "tsConfig": "libs/ngx-lazy-el/tsconfig.lib.json",
-            "project": "libs/ngx-lazy-el/ng-package.json"
+            "project": "libs/ngx-lazy-el/ng-package.json",
+            "buildableProjectDepsInPackageJsonType": "dependencies"
           }
         },
         "lint": {
