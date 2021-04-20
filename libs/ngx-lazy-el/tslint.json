@@ -1,17 +1,10 @@
 {
   "extends": "../../tslint.json",
   "rules": {
-    "directive-selector": [
-      true,
-      "attribute",
-      "juristr",
-      "camelCase"
-    ],
-    "component-selector": [
-      true,
-      "element",
-      "juristr",
-      "kebab-case"
-    ]
+    "directive-selector": [true, "attribute", "juristr", "camelCase"],
+    "component-selector": [true, "element", "juristr", "kebab-case"]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
   }
 }

@@ -99,7 +99,8 @@
           "options": {
             "jestConfig": "apps/demoapp/jest.config.js",
             "tsConfig": "apps/demoapp/tsconfig.spec.json",
-            "setupFile": "apps/demoapp/src/test-setup.ts"
+            "setupFile": "apps/demoapp/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       }
@@ -126,7 +127,7 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": "apps/demoapp-e2e/tsconfig.e2e.json",
-            "exclude": ["**/node_modules/**", "!apps/demoapp-e2e/**"]
+            "exclude": ["**/node_modules/**", "!apps/demoapp-e2e/**/*"]
           }
         }
       }
@@ -151,7 +152,7 @@
               "libs/ngx-lazy-el/tsconfig.lib.json",
               "libs/ngx-lazy-el/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/ngx-lazy-el/**"]
+            "exclude": ["**/node_modules/**", "!libs/ngx-lazy-el/**/*"]
           }
         },
         "test": {
@@ -159,7 +160,8 @@
           "options": {
             "jestConfig": "libs/ngx-lazy-el/jest.config.js",
             "tsConfig": "libs/ngx-lazy-el/tsconfig.spec.json",
-            "setupFile": "libs/ngx-lazy-el/src/test-setup.ts"
+            "setupFile": "libs/ngx-lazy-el/src/test-setup.ts",
+            "passWithNoTests": true
           }
         }
       },
