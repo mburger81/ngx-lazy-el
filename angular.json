@@ -98,8 +98,6 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/demoapp/jest.config.js",
-            "tsConfig": "apps/demoapp/tsconfig.spec.json",
-            "setupFile": "apps/demoapp/src/test-setup.ts",
             "passWithNoTests": true
           }
         }
@@ -159,8 +157,6 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/ngx-lazy-el/jest.config.js",
-            "tsConfig": "libs/ngx-lazy-el/tsconfig.spec.json",
-            "setupFile": "libs/ngx-lazy-el/src/test-setup.ts",
             "passWithNoTests": true
           }
         }
@@ -174,7 +170,6 @@
   },
   "cli": {
     "warnings": {
-      "typescriptMismatch": false,
       "versionMismatch": false
     },
     "defaultCollection": "@nrwl/angular",
